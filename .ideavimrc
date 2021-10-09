@@ -21,4 +21,6 @@ nnoremap w b
 nmap <A-k> (
 nmap <A-j> )
 
-
+" シンボル定義場所へジャンプ"
+nnoremap gb :action GotoDeclaration<CR>
+nmap gt :action Back<CR>
