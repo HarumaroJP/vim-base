@@ -1,5 +1,5 @@
 ### 参考サイト
-[Vim Cheat Sheet](https://vim.rtorr.com/lang/ja)
+[Vim Cheat Sheet](https://vim.rtorr.com/lang/ja)<br>
 [Vim幼稚園からVim小学校へ](https://qiita.com/hachi8833/items/7beeee825c11f7437f54)
 
 ## 移動
