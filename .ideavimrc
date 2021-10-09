@@ -1,5 +1,24 @@
-" クリップボードからの貼り付け 
-set clipboard=unnamed
+"https://github.com/JetBrains/ideavim/wiki/%22ideajoin%22-examples
+set ideajoin
 
-" jjをESCに置き換え
-inoremap jj <ESC> 
+set clipboard-=ideaput
+
+" クリップボードの有効化
+set clipboard+=unnamed
+
+"　ESCをjjに置き換え　
+inoremap jj  <Esc>
+
+" エディタでのタブ移動を再割り当て
+nmap gh gT
+nmap gl gt
+
+" 単語間の前後移動をスワップ
+nnoremap b w
+nnoremap w b
+
+" 段落間移動をalt+j,kに置き換え
+nmap <A-j> (
+nmap <A-k> )
+
+

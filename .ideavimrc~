@@ -1,3 +1,5 @@
-" クリップボードからの 
+" クリップボードからの貼り付け 
 set clipboard=unnamed
+
+" jjをESCに置き換え
 inoremap jj <ESC> 
