@@ -1,0 +1,3 @@
+" クリップボードからの 
+set clipboard=unnamed
+inoremap jj <ESC> 
