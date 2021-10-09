@@ -18,7 +18,7 @@ nnoremap b w
 nnoremap w b
 
 " 段落間移動をalt+j,kに置き換え
-nmap <A-j> (
-nmap <A-k> )
+nmap <A-k> (
+nmap <A-j> )
 
 
