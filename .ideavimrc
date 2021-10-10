@@ -10,17 +10,21 @@ set clipboard+=unnamed
 inoremap jj  <Esc>
 
 " エディタでのタブ移動を再割り当て
-nmap gh gT
-nmap gl gt
+nnoremap gh gT
+nnoremap gl gt
 
 " 単語間の前後移動をスワップ
-nnoremap b w
-nnoremap w b
+" nnoremap b w
+" nnoremap w b
 
 " 段落間移動をalt+j,kに置き換え
 nmap <A-k> (
 nmap <A-j> )
+nmap <A-h> w
+nmap <A-l> b
 
-" シンボル定義場所へジャンプ"
+" シンボル定義場所へジャンプ
 nnoremap gb :action GotoDeclaration<CR>
-nmap gt :action Back<CR>
+nnoremap gt :action Back<CR>
+
+noremap o o<ESC>
