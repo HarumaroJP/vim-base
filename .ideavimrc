@@ -3,6 +3,9 @@ set ideajoin
 
 set clipboard-=ideaput
 
+"　検索する時に大藻路と小文字を区別しない
+set ignorecase
+
 " クリップボードの有効化
 set clipboard+=unnamed
 
