@@ -21,43 +21,10 @@ nnoremap gl gt
 " nnoremap w b
 
 " 段落間移動をalt+j,kに置き換え
-nmap <C-k> (
-nmap <C-j> )
-nmap <C-h> w
-nmap <C-l> b
-
-" シンボル定義場所へジャンプ
-nnoremap gb :action GotoDeclaration<CR>
-nnoremap gt :action Back<CR>
-
-" 改行時にインサートモードに切り替えないようにする
-noremap o o<ESC>https://github.com/JetBrains/ideavim/wiki/%22ideajoin%22-examples
-set ideajoin
-
-set clipboard-=ideaput
-
-"　検索する時に大藻路と小文字を区別しない
-set ignorecase
-
-" クリップボードの有効化
-set clipboard+=unnamed
-
-"　ESCをjjに置き換え　
-inoremap jj  <Esc>
-
-" エディタでのタブ移動を再割り当て
-nnoremap gh gT
-nnoremap gl gt
-
-" 単語間の前後移動をスワップ
-" nnoremap b w
-" nnoremap w b
-
-" 段落間移動をalt+j,kに置き換え
-nmap <C-k> (
-nmap <C-j> )
-nmap <C-h> w
-nmap <C-l> b
+nmap <C-j> (
+nmap <C-k> )
+nmap <C-h> b
+nmap <C-l> w
 
 " シンボル定義場所へジャンプ
 nnoremap gb :action GotoDeclaration<CR>
