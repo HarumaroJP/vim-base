@@ -21,8 +21,8 @@ nnoremap gl gt
 " nnoremap w b
 
 " 段落間移動をalt+j,kに置き換え
-nmap <C-j> (
-nmap <C-k> )
+nmap <C-k> (
+nmap <C-j> )
 nmap <C-h> b
 nmap <C-l> w
 
