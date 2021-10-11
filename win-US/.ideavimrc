@@ -30,4 +30,5 @@ nmap <A-l> b
 nnoremap gb :action GotoDeclaration<CR>
 nnoremap gt :action Back<CR>
 
+" 改行と同時にインサートモードに切り替えないようにする
 noremap o o<ESC>
