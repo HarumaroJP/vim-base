@@ -1,3 +1,5 @@
+"https://github.com/JetBrains/ideavim/wiki/%22ideajoin%22-examples
+"set ideajoin
 
 set clipboard-=ideaput
 
@@ -7,26 +9,34 @@ set ignorecase
 " クリップボードの有効化
 set clipboard+=unnamed
 
-"　ESCをjjに置き換え
+"　ESCをjjに置き換え　
 inoremap jj  <Esc>
 
 " エディタでのタブ移動を再割り当て
 nnoremap gh gT
 nnoremap gl gt
 
-" 単語間の前後移動をスワップ
-" nnoremap b w
-" nnoremap w b
-
-" 段落間移動をalt+j,kに置き換え
+" 段落間移動をctrl+j,kに置き換え
 nmap <C-k> (
 nmap <C-j> )
+
+" 単語間移動をctrl+b,wに置き換え
 nmap <C-h> b
 nmap <C-l> w
+
+" 行頭移動、行末に行ったら一文字戻る"
+nnoremap <C-i> ^
+nnoremap <C-o> $h
 
 " シンボル定義場所へジャンプ
 nnoremap gb :action GotoDeclaration<CR>
 nnoremap gt :action Back<CR>
+
+" シンボルの情報表示をshift+bに変更
+nmap <S-b> <S-k>
+
+" 全選択
+nnoremap <C-a> ggvG) 
 
 " 改行時にインサートモードに切り替えないようにする
 noremap o o<ESC>
