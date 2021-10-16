@@ -16,10 +16,6 @@ inoremap jj  <Esc>
 nnoremap gh gT
 nnoremap gl gt
 
-" 単語間の前後移動をスワップ
-" nnoremap b w
-" nnoremap w b
-
 " 段落間移動をalt+j,kに置き換え
 nmap <A-k> (
 nmap <A-j> )

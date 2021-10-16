@@ -1,5 +1,9 @@
 "https://github.com/JetBrains/ideavim/wiki/%22ideajoin%22-examples
+<<<<<<< HEAD
 "set ideajoin
+=======
+set ideajoin
+>>>>>>> c231e9586fbace448170b31fca66b1060d2c0af2
 
 set clipboard-=ideaput
 
