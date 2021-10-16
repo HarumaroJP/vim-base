@@ -1,3 +1,5 @@
+"https://github.com/JetBrains/ideavim/wiki/%22ideajoin%22-examples
+set ideajoin
 
 set clipboard-=ideaput
 
@@ -14,11 +16,7 @@ inoremap jj  <Esc>
 nnoremap gh gT
 nnoremap gl gt
 
-" 単語間の前後移動をスワップ
-" nnoremap b w
-" nnoremap w b
-
-" 段落間移動をalt+j,kに置き換え
+" 段落間移動をctrl+j,kに置き換え
 nmap <C-k> (
 nmap <C-j> )
 nmap <C-h> b
