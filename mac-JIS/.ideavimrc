@@ -1,13 +1,9 @@
 "https://github.com/JetBrains/ideavim/wiki/%22ideajoin%22-examples
-<<<<<<< HEAD
-"set ideajoin
-=======
 set ideajoin
->>>>>>> c231e9586fbace448170b31fca66b1060d2c0af2
 
 set clipboard-=ideaput
 
-"　検索する時に大藻路と小文字を区別しない
+"　検索する時に大文字と小文字を区別しない
 set ignorecase
 
 " クリップボードの有効化
@@ -22,15 +18,21 @@ nnoremap gl gt
 
 " 段落間移動をctrl+j,kに置き換え
 nmap <C-k> (
+vmap <C-k> (
 nmap <C-j> )
+vmap <C-k> )
 
-" 単語間移動をctrl+b,wに置き換え
+" 単語間移動をctrl+h,lに置き換え
 nmap <C-h> b
+vmap <C-h> b
 nmap <C-l> w
+vmap <C-l> w
 
 " 行頭移動、行末に行ったら一文字戻る"
 nnoremap <C-i> ^
+vnoremap <C-i> ^
 nnoremap <C-o> $h
+vnoremap <C-o> $h
 
 " シンボル定義場所へジャンプ
 nnoremap gb :action GotoDeclaration<CR>
@@ -44,3 +46,4 @@ nnoremap <C-a> ggvG)
 
 " 改行時にインサートモードに切り替えないようにする
 noremap o o<ESC>
+
