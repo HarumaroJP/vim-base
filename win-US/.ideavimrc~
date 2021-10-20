@@ -18,21 +18,15 @@ nnoremap gl gt
 
 " 段落間移動をalt+j,kに置き換え
 nmap <A-k> (
-vmap <A-k> (
 nmap <A-j> )
-vmap <A-k> )
 
 " 単語間移動をalt+b,wに置き換え
 nmap <A-h> b
-vmap <A-h> b
 nmap <A-l> w
-vmap <A-l> w
 
 " 行頭移動、行末に行ったら一文字戻る"
 nnoremap <A-i> ^
-vnoremap <A-i> ^
 nnoremap <A-o> $h
-vnoremap <A-o> $h
 
 " シンボル定義場所へジャンプ
 nnoremap gb :action GotoDeclaration<CR>
