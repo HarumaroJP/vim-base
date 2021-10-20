@@ -19,12 +19,24 @@ nnoremap gl gt
 " 段落間移動をalt+j,kに置き換え
 nmap <A-k> (
 nmap <A-j> )
-nmap <A-h> w
-nmap <A-l> b
+
+" 単語間移動をalt+b,wに置き換え
+nmap <A-h> b
+nmap <A-l> w
+
+" 行頭移動、行末に行ったら一文字戻る"
+nnoremap <A-i> ^
+nnoremap <A-o> $h
 
 " シンボル定義場所へジャンプ
 nnoremap gb :action GotoDeclaration<CR>
 nnoremap gt :action Back<CR>
 
-" 改行と同時にインサートモードに切り替えないようにする
+" シンボルの情報表示をshift+bに変更
+nmap <S-b> <S-k>
+
+" 全選択
+nnoremap <C-a> ggvG) 
+
+" 改行時にインサートモードに切り替えないようにする
 noremap o o<ESC>
